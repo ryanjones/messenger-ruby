@@ -16,6 +16,10 @@ module Messenger
       def web_url
         { url: @value }
       end
+      
+      def phone_number
+        { payload: @value }
+      end
 
       def postback
         { payload: @value }
